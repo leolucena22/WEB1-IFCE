@@ -65,7 +65,7 @@
 
   main {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -80,10 +80,11 @@
     flex-flow: column nowrap;
     justify-content: center;
     gap: 1rem;
+    flex: 0 0 40%;
   }
 
   .img-container img {
-    width: 50%;
+    width: 100%;
     box-shadow: 0 40px 80px rgba(30, 13, 113, 0.692);
     border-radius: 5px;
   }
@@ -170,4 +171,47 @@
 
   footer a {
     color: white;
+  }
+
+  /* Responsivo */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+
+    .container-left,
+    .container-right {
+      flex: 1 1 100%;
+    }
+
+    .links ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    main {
+      font-size: 1rem;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .container-left {
+      flex: 0 0 35%;
+    }
+
+    .container-right {
+      flex: 0 0 65%;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .container-left {
+      flex: 0 0 40%;
+    }
+
+    .container-right {
+      flex: 0 0 60%;
+    }
   }
