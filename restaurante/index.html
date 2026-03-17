@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Nordestino Local</title>
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6347;
+    padding: 20px;
+  }
+
+  nav .logo h1 {
+    color: #fff;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .banner {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .banner p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+</style>
+
+<body>
+
+  <nav>
+    <div class="logo">
+      <h1>Restaurante Nordestino Local</h1>
+    </div>
+
+    <ul>
+      <li><a href="#cardapio">Cardápio</a></li>
+      <li><a href="#local">Localização</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="banner" style="background-image: url(./images/banner.jpg);">
+    <h1>Bem-vindo ao Restaurante Nordestino Local</h1>
+    <p>O melhor da culinária nordestina em um só lugar!</p>
+    <div class="butao">
+      <a href="#cardapio">Ver Cardápio</a>
+    </div>
+  </div>
+
+  <section id="cardapio">
+    <h2>Cardápio</h2>
+
+    <ol>
+      <div class="prato">
+        <li>
+          <div class="image-prato">
+            <img src="" alt="">
+          </div>
+          <h3>Carne de Sol com Macaxeira</h3>
+          <p>Deliciosa carne de sol acompanhada de macaxeira cozida, perfeita para os amantes da culinária nordestina.
+          </p>
+        </li>
+      </div>
+
+      <div class="prato">
+        <li>
+          <div class="image-prato">
+            <img src="" alt="">
+          </div>
+          <h3>Moqueca de Peixe</h3>
+          <p>Uma saborosa moqueca de peixe, preparada com ingredientes frescos e temperos típicos do Nordeste.
+          </p>
+        </li>
+      </div>
+
+      <div class="prato">
+        <li>
+          <div class="image-prato">
+            <img src="" alt="">
+          </div>
+          <h3>Feijoada</h3>
+          <p>Feijoada tradicional nordestina, feita com carne de porco e feijão preto, servida com arroz branco e
+            farofa.
+          </p>
+        </li>
+      </div>
+
+      <div class="prato">
+        <li>
+          <div class="image-prato">
+            <img src="" alt="">
+          </div>
+          <h3>Vatapá</h3>
+          <p>Vatapá cremoso, preparado com pão, camarão, leite de coco e temperos típicos do Nordeste.
+          </p>
+        </li>
+      </div>
+
+      <h2>Sobremesas</h2>
+
+      <div class="prato">
+        <li>
+          <div class="image-prato">
+            <img src="" alt="">
+          </div>
+          <h3>Doce de Caju</h3>
+          <p>Doce tradicional nordestino feito com caju, açúcar e especiarias, perfeito para adoçar o paladar.
+          </p>
+        </li>
+      </div>
+
+      <div class="prato">
+        <li>
+          <div class="image-prato">
+            <img src="" alt="">
+          </div>
+          <h3>Cartola</h3>
+          <p>Deliciosa sobremesa nordestina feita com banana, queijo coalho, açúcar e canela, gratinada até
+            ficar dourada.
+          </p>
+        </li>
+
+      </div>
+
+      <div class="prato">
+        <li>
+          <div class="image-prato">
+            <img src="" alt="">
+          </div>
+          <h3>Quindim</h3>
+          <p>Quindim tradicional, feito com gema de ovo, açúcar e coco ralado, com uma textura macia e sabor
+            irresistível.
+          </p>
+        </li>
+      </div>
+
+      <h2>Sucos</h2>
+
+      <div class="prato">
+        <li>
+          <div class="image-prato">
+            <img src="" alt="">
+          </div>
+          <h3>Suco de Manga</h3>
+          <p>Refrescante suco de manga, preparado com frutas frescas e um toque de limão para realçar o sabor.
+          </p>
+        </li>
+      </div>
+
+      <div class="prato">
+        <li>
+          <div class="image-prato">
+            <img src="" alt="">
+          </div>
+          <h3>Suco de Maracujá</h3>
+          <p>Delicioso suco de maracujá, feito com polpa fresca e um toque de açúcar para equilibrar a acidez.
+          </p>
+        </li>
+      </div>
+
+      <div class="prato">
+        <li>
+          <div class="image-prato">
+            <img src="" alt="">
+          </div>
+          <h3>Suco de Caju</h3>
+          <p>Refrescante suco de caju, preparado com frutas frescas e um toque de limão para realçar o sabor.
+          </p>
+        </li>
+      </div>
+
+    </ol>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Restaurante Nordestino Local. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+
+</html>
