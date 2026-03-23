@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+:root {
+  --primary-color: #3b2b46;
+  --secondary-color: #424e5e;
+  --accent-color: #7a959e;
+  --text-color: #ffffea;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: var(--text-color);
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-links:hover {
+  color: var(--accent-color);
+}
+
+.busca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.busca input {
+  padding: 0.5rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  width: 200px;
+}
+
+.busca button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+section {
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+}
+
+section li {
+  margin-bottom: 3.5rem;
+}
+
+section h1 {
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+section a {
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+}
+
+section a:hover {
+  background-color: var(--secondary-color);
+}
+
+#estrutura h1{
+  text-transform: uppercase;
+}
+
+.estrutura h1 {
+  color: #0b4462;
+  margin-bottom: 1rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--secondary-color);
+  margin: 1rem 0;
+}
+
+.texto h1 {
+  color: #2d938e;
+  margin-bottom: 1rem;
+}
+
+#texto h1 {
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
