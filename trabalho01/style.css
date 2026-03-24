@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /* Estilos para o guia de estilos - Index */
 
 * {
@@ -6,7 +8,9 @@
   box-sizing: border-box;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style-type: square;
 }
 
@@ -25,6 +29,11 @@ img {
   --secondary-color: #424e5e;
   --accent-color: #7a959e;
   --text-color: #ffffea;
+  --font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
 }
 
 header {
@@ -131,7 +140,7 @@ nav ul li a {
 }
 
 .resultado-busca h1 {
-  color: var(--accent-color)!important;
+  color: var(--accent-color) !important;
   transition: color 0.3s ease;
 }
 
@@ -140,7 +149,8 @@ section {
   margin-bottom: 3rem;
 }
 
-section ul, section ol {
+section ul,
+section ol {
   margin-left: 2rem;
 }
 
@@ -171,7 +181,10 @@ section .bt-verMais:hover {
   background-color: var(--secondary-color);
 }
 
-#estrutura h1, #texto h1, #listas h1, #links-midia h1 {
+#estrutura h1,
+#texto h1,
+#listas h1,
+#links-midia h1 {
   text-transform: uppercase;
 }
 
@@ -302,5 +315,3 @@ body.tema-escuro section .bt-verMais {
   outline: 2px solid var(--accent-color);
   outline-offset: 2px;
 }
-
-

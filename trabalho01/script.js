@@ -22,51 +22,73 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.busca form');
   const input = document.querySelector('.busca input');
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
+  if (form && input) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
 
-    const termo = input.value.trim().toLowerCase();
+      const termo = input.value.trim().toLowerCase();
 
-    document.querySelectorAll('section li').forEach((item) => {
-      item.classList.remove('resultado-busca');
+      document.querySelectorAll('section li').forEach((item) => {
+        item.classList.remove('resultado-busca');
 
-      const titulo = item.querySelector('h1');
-      if (termo && titulo && titulo.textContent.toLowerCase().includes(termo)) {
-        item.classList.add('resultado-busca');
-        item.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
+        const titulo = item.querySelector('h1');
+        if (termo && titulo && titulo.textContent.toLowerCase().includes(termo)) {
+          item.classList.add('resultado-busca');
+          item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
     });
-  });
+  }
 
   // Modo de leitura
 
   const btnLeitura = document.getElementById('btn-leitura');
 
   if (btnLeitura) {
-    let ativo = false;
+    // Carrega o estado do localStorage
+    let ativo = localStorage.getItem('leituraModo') === 'ativo';
+
+    // Aplica o modo de leitura no carregamento da página
+    const aplicarModoDeLeitura = (ativar) => {
+      document.querySelectorAll('p, li, a').forEach((el) => {
+        el.style.fontSize = ativar ? '20px' : '16px';
+      });
+      btnLeitura.textContent = ativar ? 'Modo de Leitura: ON' : 'Modo de Leitura: OFF';
+    };
+
+    // Inicia com o estado correto
+    aplicarModoDeLeitura(ativo);
 
     btnLeitura.addEventListener('click', () => {
       ativo = !ativo;
-      document.querySelectorAll('p, li, a').forEach((el) => {
-        el.style.fontSize = ativo ? '20px' : '16px';
-      });
-      btnLeitura.textContent = ativo ? 'Modo de Leitura: ON' : 'Modo de Leitura: OFF';
+      aplicarModoDeLeitura(ativo);
+      // Salva o estado no localStorage
+      localStorage.setItem('leituraModo', ativo ? 'ativo' : 'inativo');
+    });
+  }
+
+  // Modo escuro
+
+  const btnTema = document.getElementById('btn-tema');
+
+  if (btnTema) {
+    // Carrega o estado do tema
+    const temaEscuro = localStorage.getItem('temaEscuro') === 'ativo';
+    if (temaEscuro) {
+      document.body.classList.add('tema-escuro');
+      btnTema.textContent = '☀️';
+    }
+
+    btnTema.addEventListener('click', () => {
+      document.body.classList.toggle('tema-escuro');
+
+      if (document.body.classList.contains('tema-escuro')) {
+        btnTema.textContent = '☀️';
+        localStorage.setItem('temaEscuro', 'ativo');
+      } else {
+        btnTema.textContent = '🌙';
+        localStorage.setItem('temaEscuro', 'inativo');
+      }
     });
   }
 });
-
-// Modo escuro
-
-const btnTema = document.getElementById('btn-tema');
-
-if (btnTema) {
-  btnTema.addEventListener('click', () => {
-    document.body.classList.toggle('tema-escuro');
-
-    if (document.body.classList.contains('tema-escuro')) {
-      btnTema.textContent = '☀️';
-    } else {
-      btnTema.textContent = '🌙';
-    }
-  });
-}
