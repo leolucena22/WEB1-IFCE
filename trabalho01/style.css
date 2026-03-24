@@ -179,7 +179,74 @@ footer {
   overflow-x: auto;
 }
 
+.modo-leitura {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
 
+.modo-leitura button {
+  padding: 0.5rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
 
+.modo-leitura button:hover {
+  background-color: var(--secondary-color);
+}
+
+body {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+body.tema-escuro {
+  background-color: #1a1a1a;
+  color: #ffffea;
+}
+
+body.tema-escuro header,
+body.tema-escuro footer {
+  background-color: #1a1a2e;
+}
+
+body.tema-escuro section .bt-verMais {
+  background-color: #3b2b46;
+}
+
+#btn-tema {
+  padding: 0.5rem 1.1rem;
+  background: linear-gradient(135deg, rgba(122, 149, 158, 0.22), rgba(66, 78, 94, 0.35));
+  color: var(--text-color);
+  border: 1px solid rgba(255, 255, 234, 0.45);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+#btn-tema:hover {
+  background: linear-gradient(135deg, rgba(122, 149, 158, 0.35), rgba(59, 43, 70, 0.5));
+  border-color: rgba(255, 255, 234, 0.75);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.24);
+  transform: translateY(-1px);
+}
+
+#btn-tema:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#btn-tema:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
 
 
