@@ -13,15 +13,59 @@
     <h1>Guia de Estilos - WEB Básica</h1>
     <nav>
       <ul>
-        <li><a href="#estrutura">Tags de Estrutura</a></li>
-        <li><a href="#texto">Tags de Texto</a></li>
-        <li><a href="#listas">Tags de Listas</a></li>
-        <li><a href="#links-midia">Tags de Links e Mídias</a></li>
+        <li><a href="../../index.html">Tags de Estrutura</a></li>
+        <li><a href="../../index.html#texto">Tags de Texto</a></li>
+        <li><a href="../../index.html#listas">Tags de Listas</a></li>
+        <li><a href="../../index.html#links-midia">Tags de Links e Mídias</a></li>
       </ul>
     </nav>
   </header>
 
-  <h1>Tag HTML</h1>
+  <section class="html">
+    <div class="box">
+      <h1>Tag HTML</h1>
+      <div class="box-img">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg"
+          data-hover="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+          alt="Imagem da tag HTML">
+      </div>
+    </div>
+
+
+    <p>A tag <code>&lt;html&gt;</code> é a raiz de um documento HTML. Ela envolve todo o conteúdo da página, incluindo
+      as tags <code>&lt;head&gt;</code> e <code>&lt;body&gt;</code>. A estrutura básica de um documento HTML é a
+      seguinte:</p>
+
+    <div class="box-code">
+      <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Título da Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Conteúdo da página
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+      <p>O atributo <code>lang</code> é usado para especificar o idioma do conteúdo da página, o que é importante para
+        acessibilidade e SEO. No exemplo acima, o idioma é definido como português do Brasil (<code>pt-br</code>).</p>
+    </div>
+
+    <h2>Exemplo Prático</h2>
+    <div class="box-example">
+      <p><strong>Nota:</strong> A tag <code>&lt;html&gt;</code> engloba todo o documento e não é visível diretamente.
+        Esta página atual está dentro de uma tag <code>&lt;html&gt;</code> com <code>lang="pt-br"</code>.</p>
+      <p>Você pode inspecionar o código-fonte desta página (Ctrl+U ou F12) para ver a tag <code>&lt;html&gt;</code>
+        envolvendo o head e o body.</p>
+      <p>A estrutura HTML5 padrão sempre começa com <code>&lt;!DOCTYPE html&gt;</code> e envolve todo o conteúdo com
+        <code>&lt;html&gt;</code> tags.</p>
+    </div>
+  </section>
+
+
+  <script src="../../script.js"></script>
+
 </body>
 
 </html>

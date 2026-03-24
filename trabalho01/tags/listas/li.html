@@ -13,15 +13,51 @@
     <h1>Guia de Estilos - WEB Básica</h1>
     <nav>
       <ul>
-        <li><a href="#estrutura">Tags de Estrutura</a></li>
-        <li><a href="#texto">Tags de Texto</a></li>
-        <li><a href="#listas">Tags de Listas</a></li>
-        <li><a href="#links-midia">Tags de Links e Mídias</a></li>
+        <li><a href="../../index.html">Tags de Estrutura</a></li>
+        <li><a href="../../index.html#texto">Tags de Texto</a></li>
+        <li><a href="../../index.html#listas">Tags de Listas</a></li>
+        <li><a href="../../index.html#links-midia">Tags de Links e Mídias</a></li>
       </ul>
     </nav>
   </header>
 
-  <h1>Tag LI</h1>
+  <section class="li">
+    <div class="box">
+      <h1>Tag LI</h1>
+      <div class="box-img">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg"
+          data-hover="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+          alt="Imagem da tag LI">
+      </div>
+    </div>
+
+    <p>A tag <code>&lt;li&gt;</code> define um item de lista e deve estar sempre dentro de uma lista pai
+      (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, ou <code>&lt;dl&gt;</code>). Cada <code>&lt;li&gt;</code>
+      representa um item individual na lista.</p>
+
+    <div class="box-code">
+      <pre>&lt;ul&gt;
+  &lt;li&gt;Primeiro item&lt;/li&gt;
+  &lt;li&gt;Segundo item&lt;/li&gt;
+  &lt;li&gt;Terceiro item&lt;/li&gt;
+&lt;/ul&gt;</pre>
+      <p>O <code>&lt;li&gt;</code> pode conter qualquer tipo de conteúdo: texto, imagens, links, parágrafos, etc. Sempre
+        use <code>&lt;li&gt;</code> dentro de uma lista pai; não o utilize isoladamente.</p>
+    </div>
+
+    <h2>Exemplo Prático</h2>
+    <div class="box-example">
+      <h3>Habilidades de Desenvolvimento Web</h3>
+      <ul>
+        <li>HTML5 - Estrutura semântica e acessibilidade</li>
+        <li>CSS3 - Layouts, animações e responsividade</li>
+        <li>JavaScript - Interatividade e manipulação do DOM</li>
+        <li>Boas práticas - Código limpo e documentação</li>
+      </ul>
+      <p>Veja como cada item <code>&lt;li&gt;</code> é renderizado automaticamente dentro de sua lista pai.</p>
+    </div>
+  </section>
+  <script src="../../script.js"></script>
 </body>
 
 </html>

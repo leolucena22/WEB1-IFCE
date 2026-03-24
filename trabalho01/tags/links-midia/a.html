@@ -13,15 +13,50 @@
     <h1>Guia de Estilos - WEB Básica</h1>
     <nav>
       <ul>
-        <li><a href="#estrutura">Tags de Estrutura</a></li>
-        <li><a href="#texto">Tags de Texto</a></li>
-        <li><a href="#listas">Tags de Listas</a></li>
-        <li><a href="#links-midia">Tags de Links e Mídias</a></li>
+        <li><a href="../../index.html">Tags de Estrutura</a></li>
+        <li><a href="../../index.html#texto">Tags de Texto</a></li>
+        <li><a href="../../index.html#listas">Tags de Listas</a></li>
+        <li><a href="../../index.html#links-midia">Tags de Links e Mídias</a></li>
       </ul>
     </nav>
   </header>
 
-  <h1>Tag A</h1>
+  <section class="a">
+    <div class="box">
+      <h1>Tag A</h1>
+      <div class="box-img">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-plain.svg"
+          data-hover="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+          alt="Imagem da tag A">
+      </div>
+    </div>
+
+    <p>A tag <code>&lt;a&gt;</code> define um hiperlink que conecta documentos. O atributo <code>href</code> especifica
+      a URL ou destino do link. É um dos elementos mais importantes da web, permitindo navegação entre páginas e seções.
+    </p>
+
+    <div class="box-code">
+      <pre>&lt;a href="https://www.exemplo.com"&gt;Visite o Site&lt;/a&gt;
+&lt;a href="./pagina-interna.html"&gt;Link Interno&lt;/a&gt;
+&lt;a href="#secao-1"&gt;Ir para Seção&lt;/a&gt;
+&lt;a href="mailto:email@exemplo.com"&gt;Enviar Email&lt;/a&gt;</pre>
+      <p>Use <code>href</code> para páginas externas (URLs completas), caminhos relativos para internes,
+        <code>#id</code> para ancorar a seções, e <code>mailto:</code> para links de email. O atributo
+        <code>target="_blank"</code> abre em nova aba.</p>
+    </div>
+    <h2>Exemplo Prático</h2>
+    <div class="box-example">
+      <h3>Diferentes Tipos de Links</h3>
+      <ul>
+        <li><a href="../../index.html">Link para página interna</a> - Voltar ao início</li>
+        <li><a href="https://www.w3schools.com" target="_blank">Link externo</a> - Abre em nova aba</li>
+        <li><a href="mailto:contato@exemplo.com">Link de email</a> - Para enviar mensagens</li>
+        <li><a href="#exemplo-pratico">Link de âncora</a> - Pula para seção da página</li>
+      </ul>
+      <p>Os links são azuis e sublinhados por padrão, tornando-os facilmente identificáveis como navegáveis.</p>
+    </div>
+  </section>
+  <script src="../../script.js"></script>
 </body>
 
 </html>

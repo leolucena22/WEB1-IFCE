@@ -13,15 +13,52 @@
     <h1>Guia de Estilos - WEB Básica</h1>
     <nav>
       <ul>
-        <li><a href="#estrutura">Tags de Estrutura</a></li>
-        <li><a href="#texto">Tags de Texto</a></li>
-        <li><a href="#listas">Tags de Listas</a></li>
-        <li><a href="#links-midia">Tags de Links e Mídias</a></li>
+        <li><a href="../../index.html">Tags de Estrutura</a></li>
+        <li><a href="../../index.html#texto">Tags de Texto</a></li>
+        <li><a href="../../index.html#listas">Tags de Listas</a></li>
+        <li><a href="../../index.html#links-midia">Tags de Links e Mídias</a></li>
       </ul>
     </nav>
   </header>
 
-  <h1>Tag H1-H6</h1>
+  <section class="h">
+    <div class="box">
+      <h1>Tag H1-H6</h1>
+      <div class="box-img">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg"
+          data-hover="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+          alt="Imagem da tag H">
+      </div>
+    </div>
+
+    <p>As tags <code>&lt;h1&gt;</code> até <code>&lt;h6&gt;</code> definem títulos e subtítulos com diferentes níveis de
+      importância. O <code>&lt;h1&gt;</code> é o mais importante (geralmente usado uma vez por página), enquanto
+      <code>&lt;h6&gt;</code> é o menos importante.</p>
+
+    <div class="box-code">
+      <pre>&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo Secundário&lt;/h2&gt;
+&lt;h3&gt;Subtítulo Terciário&lt;/h3&gt;
+&lt;h4&gt;Subtítulo Quaternário&lt;/h4&gt;
+&lt;h5&gt;Subtítulo Quinto&lt;/h5&gt;
+&lt;h6&gt;Subtítulo Sexto&lt;/h6&gt;</pre>
+      <p>Usar a hierarquia correta de títulos é importante para SEO e acessibilidade. Leitores de tela usam essas tags
+        para navegar. Não pule níveis (ex: não vá de h1 diretamente para h3).</p>
+    </div>
+
+    <h2>Exemplo Prático - Hierarquia de Títulos</h2>
+    <div class="box-example">
+      <h2>Título Nível 2 - Subtítulo Principal</h2>
+      <p>Este é conteúdo sob um h2. Aqui vem informações relevantes ao subtítulo acima.</p>
+      <h3>Título Nível 3 - Subtítulo Secundário</h3>
+      <p>Este é conteúdo sob um h3, mais específico que o anterior.</p>
+      <h3>Outro Título Nível 3</h3>
+      <p>Observe como os diferentes níveis criam uma hierarquia visual e semântica clara.</p>
+      <h4>Título Nível 4 - Bastante Específico</h4>
+      <p>Este h4 é ainda mais granular, perfeito para detalhes muito específicos.</p>
+    </div>
+  </section>
+  <script src="../../script.js"></script>
 </body>
 
 </html>

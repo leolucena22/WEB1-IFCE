@@ -13,15 +13,46 @@
     <h1>Guia de Estilos - WEB Básica</h1>
     <nav>
       <ul>
-        <li><a href="#estrutura">Tags de Estrutura</a></li>
-        <li><a href="#texto">Tags de Texto</a></li>
-        <li><a href="#listas">Tags de Listas</a></li>
-        <li><a href="#links-midia">Tags de Links e Mídias</a></li>
+        <li><a href="../../index.html">Tags de Estrutura</a></li>
+        <li><a href="../../index.html#texto">Tags de Texto</a></li>
+        <li><a href="../../index.html#listas">Tags de Listas</a></li>
+        <li><a href="../../index.html#links-midia">Tags de Links e Mídias</a></li>
       </ul>
     </nav>
   </header>
 
-  <h1>Tag SPAN</h1>
+  <section class="span">
+    <div class="box">
+      <h1>Tag SPAN</h1>
+      <div class="box-img">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-plain.svg"
+          data-hover="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+          alt="Imagem da tag SPAN">
+      </div>
+    </div>
+
+    <p>A tag <code>&lt;span&gt;</code> é um contêiner genérico inline para agrupar elementos para estilização com CSS ou
+      manipulação com JavaScript. Diferente de <code>&lt;div&gt;</code> que é um elemento de bloco, o
+      <code>&lt;span&gt;</code> não quebra linhas.</p>
+
+    <div class="box-code">
+      <pre>&lt;p&gt;Este é um <span style="color: red;">texto vermelho</span> dentro de um parágrafo.&lt;/p&gt;
+&lt;p&gt;Use span para <span class="destaque">estilizar trechos específicos&lt;/span> de texto.&lt;/p&gt;</pre>
+      <p><code>&lt;span&gt;</code> é frequentemente usado com CSS classes para aplicar estilos localizados em texto. Sem
+        CSS ou JavaScript, não adiciona nenhum valor visual ou semântico.</p>
+    </div>
+
+    <h2>Exemplo Prático</h2>
+    <div class="box-example">
+      <p>Este parágrafo tem <span style="color: red;">texto em vermelho</span> usando uma tag span com estilo inline.
+      </p>
+      <p>Você também pode usar spans com <span style="background-color: yellow;">fundo colorido</span> para destacar
+        trechos específicos dentro de texto.</p>
+      <p>A flexibilidade da tag <span style="font-weight: bold; color: blue;">span com múltiplos estilos</span> torna-a
+        perfeita para ajustes precisos.</p>
+    </div>
+  </section>
+  <script src="../../script.js"></script>
 </body>
 
 </html>

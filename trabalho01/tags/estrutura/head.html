@@ -13,15 +13,67 @@
     <h1>Guia de Estilos - WEB Básica</h1>
     <nav>
       <ul>
-        <li><a href="#estrutura">Tags de Estrutura</a></li>
-        <li><a href="#texto">Tags de Texto</a></li>
-        <li><a href="#listas">Tags de Listas</a></li>
-        <li><a href="#links-midia">Tags de Links e Mídias</a></li>
+        <li><a href="../../index.html">Tags de Estrutura</a></li>
+        <li><a href="../../index.html#texto">Tags de Texto</a></li>
+        <li><a href="../../index.html#listas">Tags de Listas</a></li>
+        <li><a href="../../index.html#links-midia">Tags de Links e Mídias</a></li>
       </ul>
     </nav>
   </header>
 
-  <h1>Tag HEAD</h1>
+  <section class="head">
+    <div class="box">
+      <h1>Tag HEAD</h1>
+      <div class="box-img">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg"
+          data-hover="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+          alt="Imagem da tag HEAD">
+      </div>
+    </div>
+
+    <p>A tag <code>&lt;head&gt;</code> é usada para definir informações meta sobre o documento HTML. Ela não é exibida
+      diretamente na página, mas contém elementos que influenciam a renderização e o comportamento da página, como o
+      título, descrição, palavras-chave, e links para folhas de estilo e scripts. A estrutura básica de um documento
+      HTML é a seguinte:</p>
+
+    <div class="box-code">
+      <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Título da Página&lt;/title&gt; &lt;!-- Título da página, exibido na aba do navegador --&gt;
+  &lt;meta name="description" content="Descrição da página para SEO"&gt;
+  &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt; &lt;!-- Link para folha de estilo --&gt;
+  &lt;script src="script.js"&gt; &lt;!-- Link para script JavaScript --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Conteúdo da página
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+      <p>O conteúdo dentro da tag <code>&lt;head&gt;</code> é crucial para a otimização de mecanismos de busca (SEO) e
+        para garantir que a página seja exibida corretamente em diferentes dispositivos e navegadores. O título da
+        página, por exemplo, é importante para os usuários identificarem a página na aba do navegador e para os
+        mecanismos de busca entenderem o conteúdo da página.</p>
+    </div>
+
+    <h2>Exemplo Prático</h2>
+    <div class="box-example">
+      <p><strong>Nota:</strong> A tag <code>&lt;head&gt;</code> não exibe conteúdo visível na página, mas seu efeito é
+        claro:</p>
+      <ul>
+        <li>O título desta página "Tag HEAD" aparece na aba do navegador - definido no <code>&lt;title&gt;</code></li>
+        <li>A página está responsiva em diferentes tamanhos - graças ao <code>&lt;meta name="viewport"&gt;</code></li>
+        <li>O estilo visual está aplicado - pela <code>&lt;link rel="stylesheet" href="..."&gt;</code></li>
+        <li>Este script funciona - pelo <code>&lt;script src="..."&gt;</code></li>
+      </ul>
+      <p>Inspecione a tag <code>&lt;head&gt;</code> desta página pressionando F12 para ver esses elementos em ação.</p>
+    </div>
+  </section>
+
+
+  <script src="../../script.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+/* Estilos para o guia de estilos - Index */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,12 @@
 }
 
 ul, ol, li {
-  list-style: none;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 :root {
@@ -21,9 +28,8 @@ header {
   align-items: center;
   background-color: var(--primary-color);
   color: var(--text-color);
-  padding: 1rem;
   margin-bottom: 2rem;
-  
+  padding: 1rem 2rem;
 }
 
 nav ul {
@@ -36,7 +42,6 @@ nav ul {
 nav ul li a {
   color: var(--text-color);
   text-decoration: none;
-  font-weight: bold;
 }
 
 .menu-links:hover {
@@ -99,9 +104,10 @@ section a:hover {
   background-color: var(--secondary-color);
 }
 
-#estrutura h1{
+#estrutura h1, #texto h1, #listas h1, #links-midia h1 {
   text-transform: uppercase;
 }
+
 
 .estrutura h1 {
   color: #0b4462;
@@ -111,7 +117,7 @@ section a:hover {
 hr {
   border: none;
   border-top: 1px solid var(--secondary-color);
-  margin: 1rem 0;
+  margin: 5rem 0;
 }
 
 .texto h1 {
@@ -119,12 +125,46 @@ hr {
   margin-bottom: 1rem;
 }
 
-#texto h1 {
-  text-transform: uppercase;
+.listas h1 {
+  color: #7b6ed6;
+  margin-bottom: 1rem;
 }
 
+.link-midias h1 {
+  color: #fc370c;
+  margin-bottom: 1rem;
+}
 
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 5rem;
+}
 
+/* CSS páginas individuais */
+
+.box {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.box-img img {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+}
+
+.box-code pre {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+}
 
 
 

@@ -13,15 +13,58 @@
     <h1>Guia de Estilos - WEB Básica</h1>
     <nav>
       <ul>
-        <li><a href="#estrutura">Tags de Estrutura</a></li>
-        <li><a href="#texto">Tags de Texto</a></li>
-        <li><a href="#listas">Tags de Listas</a></li>
-        <li><a href="#links-midia">Tags de Links e Mídias</a></li>
+        <li><a href="../../index.html">Tags de Estrutura</a></li>
+        <li><a href="../../index.html#texto">Tags de Texto</a></li>
+        <li><a href="../../index.html#listas">Tags de Listas</a></li>
+        <li><a href="../../index.html#links-midia">Tags de Links e Mídias</a></li>
       </ul>
     </nav>
   </header>
 
-  <h1>Tag BODY</h1>
+  <section class="body">
+    <div class="box">
+      <h1>Tag BODY</h1>
+      <div class="box-img">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"
+          data-hover="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+          alt="Imagem da tag BODY">
+      </div>
+    </div>
+
+    <p>A tag <code>&lt;body&gt;</code> envolve todo o conteúdo visível da página web. É aqui que ficam os parágrafos,
+      imagens, links, tabelas e todos os elementos que o usuário vê no navegador. Apenas um <code>&lt;body&gt;</code>
+      pode existir por página.</p>
+
+    <div class="box-code">
+      <pre>&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Título Principal&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;p&gt;Conteúdo da página&lt;/p&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;
+    &lt;p&gt;Rodapé&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;</pre>
+      <p>A estrutura semântica dentro do <code>body</code> deve usar tags como <code>&lt;header&gt;</code>,
+        <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code> e
+        <code>&lt;footer&gt;</code> para melhor acessibilidade e SEO.</p>
+    </div>
+
+    <h2>Exemplo Prático</h2>
+    <div class="box-example">
+      <p><strong>Você está vendo este conteúdo agora porque está dentro da tag <code>&lt;body&gt;</code> desta
+          página!</strong></p>
+      <p>Tudo o que você vê na página - títulos, parágrafos, imagens, links, listas - está dentro do
+        <code>&lt;body&gt;</code>. É o container para todo conteúdo visível.</p>
+      <p>A tag <code>&lt;header&gt;</code> no topo com navegação, o <code>&lt;section&gt;</code> com conteúdo, tudo faz
+        parte do body. Esta é a estrutura semântica moderna do HTML5, tornando a página acessível e bem organizada.</p>
+      <p><strong>Resumindo:</strong> Se você vê, o conteúdo está no <code>&lt;body&gt;</code>. Se você não vê (como CSS
+        ou configurações), está no <code>&lt;head&gt;</code>.</p>
+    </div>
+  </section>
+  <script src="../../script.js"></script>
 </body>
 
 </html>

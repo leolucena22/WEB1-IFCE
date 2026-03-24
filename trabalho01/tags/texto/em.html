@@ -13,15 +13,44 @@
     <h1>Guia de Estilos - WEB Básica</h1>
     <nav>
       <ul>
-        <li><a href="#estrutura">Tags de Estrutura</a></li>
-        <li><a href="#texto">Tags de Texto</a></li>
-        <li><a href="#listas">Tags de Listas</a></li>
-        <li><a href="#links-midia">Tags de Links e Mídias</a></li>
+        <li><a href="../../index.html">Tags de Estrutura</a></li>
+        <li><a href="../../index.html#texto">Tags de Texto</a></li>
+        <li><a href="../../index.html#listas">Tags de Listas</a></li>
+        <li><a href="../../index.html#links-midia">Tags de Links e Mídias</a></li>
       </ul>
     </nav>
   </header>
 
-  <h1>Tag EM</h1>
+  <section class="em">
+    <div class="box">
+      <h1>Tag EM</h1>
+      <div class="box-img">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg"
+          data-hover="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+          alt="Imagem da tag EM">
+      </div>
+    </div>
+
+    <p>A tag <code>&lt;em&gt;</code> define texto com ênfase semântica. Visualmente, renderiza o texto em
+      <em>itálico</em>, mas seu propósito é semântico - indicar que o texto tem importância especial ou entonação.
+      Leitores de tela a reconhecem e alteram a entonação.</p>
+
+    <div class="box-code">
+      <pre>&lt;p&gt;Este é um texto <em>importante</em> que precisa de ênfase.&lt;/p&gt;
+&lt;p&gt;Use <em>em</em> quando o significado é alterado pela ênfase.&lt;/p&gt;</pre>
+      <p>Diferente de <code>&lt;i&gt;</code> que é apenas visual, <code>&lt;em&gt;</code> tem significado semântico. Use
+        <code>&lt;em&gt;</code> para realçar palavras importantes e <code>&lt;i&gt;</code> apenas para nomes
+        científicos, títulos de obras, etc.</p>
+    </div>
+
+    <h2>Exemplo Prático</h2>
+    <div class="box-example">
+      <p>Este é um exemplo de texto com <em>ênfase especial</em> destacando palavras importantes. Observe como o texto
+        aparece em itálico para indicar importância semântica e entonação.</p>
+      <p>Quando você <em>realmente quer enfatizar</em> algo, a tag <em>em</em> é a escolha correta!</p>
+    </div>
+  </section>
+  <script src="../../script.js"></script>
 </body>
 
 </html>

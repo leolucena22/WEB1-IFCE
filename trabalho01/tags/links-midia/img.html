@@ -13,15 +13,51 @@
     <h1>Guia de Estilos - WEB Básica</h1>
     <nav>
       <ul>
-        <li><a href="#estrutura">Tags de Estrutura</a></li>
-        <li><a href="#texto">Tags de Texto</a></li>
-        <li><a href="#listas">Tags de Listas</a></li>
-        <li><a href="#links-midia">Tags de Links e Mídias</a></li>
+        <li><a href="../../index.html">Tags de Estrutura</a></li>
+        <li><a href="../../index.html#texto">Tags de Texto</a></li>
+        <li><a href="../../index.html#listas">Tags de Listas</a></li>
+        <li><a href="../../index.html#links-midia">Tags de Links e Mídias</a></li>
       </ul>
     </nav>
   </header>
 
-  <h1>Tag IMG</h1>
+  <section class="img">
+    <div class="box">
+      <h1>Tag IMG</h1>
+      <div class="box-img">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg"
+          data-hover="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+          alt="Imagem da tag IMG">
+      </div>
+    </div>
+
+    <p>A tag <code>&lt;img&gt;</code> insere uma imagem na página. O atributo <code>src</code> especifica o caminho da
+      imagem, e <code>alt</code> fornece uma descrição de texto para acessibilidade. É um elemento vazio (self-closing)
+      e é essencial para conteúdo visual.</p>
+
+    <div class="box-code">
+      <pre>&lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;
+&lt;img src="./imagens/foto.png" alt="Foto de exemplo" width="300" height="200"&gt;
+&lt;img src="https://exemplo.com/img.gif" alt="Imagem externa"&gt;</pre>
+      <p>Sempre inclua o atributo <code>alt</code> para descrever a imagem - é importante para SEO e acessibilidade. Use
+        <code>width</code> e <code>height</code> para especificar dimensões, prevenindo layout shifts ao carregar.</p>
+    </div>
+
+    <h2>Exemplo Prático</h2>
+    <div class="box-example">
+      <h3>Imagens em Ação</h3>
+      <p>Abaixo estão exemplos de imagens de diferentes tamanhos:</p>
+      <img src="https://via.placeholder.com/200x150?text=200x150" alt="Imagem de exemplo 200x150" width="200"
+        height="150" style="margin: 10px;">
+      <img src="https://via.placeholder.com/150x150?text=Avatar" alt="Imagem de avatar circular" width="150"
+        height="150" style="margin: 10px; border-radius: 50%;">
+      <img src="https://via.placeholder.com/300x100?text=Banner" alt="Imagem de banner largo" width="300" height="100"
+        style="margin: 10px;">
+      <p>As imagens acima demonstram como diferentes dimensões e estilos CSS podem transformar a apresentação do
+        conteúdo visual.</p>
+    </div>
+  </section>
+  <script src="../../script.js"></script>
 </body>
 
 </html>

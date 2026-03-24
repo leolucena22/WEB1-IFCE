@@ -13,15 +13,52 @@
     <h1>Guia de Estilos - WEB Básica</h1>
     <nav>
       <ul>
-        <li><a href="#estrutura">Tags de Estrutura</a></li>
-        <li><a href="#texto">Tags de Texto</a></li>
-        <li><a href="#listas">Tags de Listas</a></li>
-        <li><a href="#links-midia">Tags de Links e Mídias</a></li>
+        <li><a href="../../index.html">Tags de Estrutura</a></li>
+        <li><a href="../../index.html#texto">Tags de Texto</a></li>
+        <li><a href="../../index.html#listas">Tags de Listas</a></li>
+        <li><a href="../../index.html#links-midia">Tags de Links e Mídias</a></li>
       </ul>
     </nav>
   </header>
 
-  <h1>Tag UL</h1>
+  <section class="ul">
+    <div class="box">
+      <h1>Tag UL</h1>
+      <div class="box-img">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg"
+          data-hover="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+          alt="Imagem da tag UL">
+      </div>
+    </div>
+
+    <p>A tag <code>&lt;ul&gt;</code> define uma lista não ordenada (com bullets/pontos). Cada item é definido com
+      <code>&lt;li&gt;</code>. Use quando a ordem não é importante, como em listas de características ou itens.</p>
+
+    <div class="box-code">
+      <pre>&lt;ul&gt;
+  &lt;li&gt;Maçã&lt;/li&gt;
+  &lt;li&gt;Banana&lt;/li&gt;
+  &lt;li&gt;Laranja&lt;/li&gt;
+&lt;/ul&gt;</pre>
+      <p>O tipo de marcador pode ser customizado com CSS usando <code>list-style-type</code>. Os valores podem ser
+        <code>disc</code> (padrão), <code>circle</code>, <code>square</code>, ou uma imagem customizada.</p>
+    </div>
+
+    <h2>Exemplo Prático</h2>
+    <div class="box-example">
+      <h3>Frutas Disponíveis</h3>
+      <ul>
+        <li>Maçã vermelha da Fazenda do Norte</li>
+        <li>Banana prata fresca</li>
+        <li>Laranja suculenta</li>
+        <li>Morango em caixas de 500g</li>
+        <li>Melancia melão doce</li>
+      </ul>
+      <p>As listas não ordenadas são ideais quando a sequência não importa, como em cardápios, características, ou itens
+        de compra.</p>
+    </div>
+  </section>
+  <script src="../../script.js"></script>
 </body>
 
 </html>
