@@ -7,7 +7,12 @@
 }
 
 ul, ol, li {
-  list-style-type: none;
+  list-style-type: square;
+}
+
+li::marker {
+  color: var(--accent-color);
+  font-size: 2em;
 }
 
 img {
@@ -37,6 +42,10 @@ nav ul {
   gap: 20px;
   align-items: center;
   color: var(--text-color);
+}
+
+nav ul li {
+  list-style: none;
 }
 
 nav ul li a {
@@ -77,6 +86,10 @@ section {
   margin-bottom: 3rem;
 }
 
+section ul, section ol {
+  margin-left: 2rem;
+}
+
 section li {
   margin-bottom: 3.5rem;
 }
@@ -91,7 +104,7 @@ section p {
   line-height: 1.6;
 }
 
-section a {
+section .bt-verMais {
   color: var(--text-color);
   text-decoration: none;
   background-color: var(--primary-color);
@@ -100,7 +113,7 @@ section a {
   border-radius: 5px;
 }
 
-section a:hover {
+section .bt-verMais:hover {
   background-color: var(--secondary-color);
 }
 
