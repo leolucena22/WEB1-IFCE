@@ -28,13 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const termo = input.value.trim().toLowerCase();
 
     document.querySelectorAll('section li').forEach((item) => {
-      item.style.backgroundColor = '';
-      item.style.color = '';
+      item.classList.remove('resultado-busca');
 
       const titulo = item.querySelector('h1');
       if (termo && titulo && titulo.textContent.toLowerCase().includes(termo)) {
-        item.style.backgroundColor = '#7a959e';
-        item.style.color = '#ffffea';
+        item.classList.add('resultado-busca');
         item.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     });
