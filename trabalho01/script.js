@@ -1,3 +1,23 @@
+// Botão de voltar para páginas internas
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Verifica se não é a página index
+  if (!window.location.pathname.endsWith('index.html')) {
+    const header = document.querySelector('header');
+    if (header) {
+      const btnVoltar = document.createElement('button');
+      btnVoltar.id = 'btn-voltar';
+      btnVoltar.textContent = '← Voltar';
+      
+      btnVoltar.addEventListener('click', () => {
+        window.history.back();
+      });
+
+      header.appendChild(btnVoltar);
+    }
+  }
+});
+
 // Trocar imagens ao passar o mouse
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -32,7 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
         item.classList.remove('resultado-busca');
 
         const titulo = item.querySelector('h1');
-        if (termo && titulo && titulo.textContent.toLowerCase().includes(termo)) {
+
+        if (termo && titulo && titulo.textContent.trim().toLowerCase() === termo) {
           item.classList.add('resultado-busca');
           item.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
@@ -53,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('p, li, a').forEach((el) => {
         el.style.fontSize = ativar ? '20px' : '16px';
       });
-      btnLeitura.textContent = ativar ? 'Modo de Leitura: ON' : 'Modo de Leitura: OFF';
+      btnLeitura.textContent = ativar ? 'Diminuir fonte' : 'Aumentar fonte';
     };
 
     // Inicia com o estado correto
