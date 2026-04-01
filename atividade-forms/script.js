@@ -100,6 +100,5 @@ form.addEventListener('submit', (e) => {
   // Limpa o formulário
   form.reset();
   emailError.textContent = '';
-  // Reaplica data mínima após reset
   dataEvento.min = dataHojeFormatada;
 });
