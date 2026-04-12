@@ -13,3 +13,9 @@ const idade = [10, 20, 30, 40, 50]
 const somaIdade = idade.reduce((idade, acumulador) => idade + acumulador, 0)
 
 console.log("Soma de idades: ", somaIdade)
+
+const numeros2 = [1, 2, 3, 4, 5]
+
+const potencia = numeros2.map(nume => nume ** 2)
+
+console.log("Números elevados ao quadrado: ", potencia)

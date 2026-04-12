@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Exercícios - map, filter, reduce</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .questao {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    code {
+      display: block;
+      background: #eee;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🧠 Exercícios - map, filter, reduce</h1>
+
+  <div class="questao">
+    <h3>1. (map - básico)</h3>
+    <p>Crie um novo array com o dobro de cada número:</p>
+    <code>const numeros = [1, 2, 3, 4]</code>
+  </div>
+
+  <div class="questao">
+    <h3>2. (map - objetos)</h3>
+    <p>Crie um array contendo apenas os nomes:</p>
+    <code>
+const pessoas = [
+  { nome: "Ana", idade: 20 },
+  { nome: "João", idade: 25 },
+  { nome: "Carlos", idade: 30 }
+]
+    </code>
+  </div>
+
+  <div class="questao">
+    <h3>3. (filter - básico)</h3>
+    <p>Filtre apenas os números maiores que 20:</p>
+    <code>const numeros = [10, 15, 20, 25, 30]</code>
+  </div>
+
+  <div class="questao">
+    <h3>4. (filter - objetos)</h3>
+    <p>Retorne apenas os produtos com preço acima de 100:</p>
+    <code>
+const produtos = [
+  { nome: "Mouse", preco: 50 },
+  { nome: "Teclado", preco: 150 },
+  { nome: "Monitor", preco: 800 }
+]
+    </code>
+  </div>
+
+  <div class="questao">
+    <h3>5. (reduce - soma)</h3>
+    <p>Some todos os valores:</p>
+    <code>const numeros = [5, 10, 15]</code>
+  </div>
+
+  <div class="questao">
+    <h3>6. (reduce - objetos)</h3>
+    <p>Calcule o valor total da compra:</p>
+    <code>
+const carrinho = [
+  { produto: "Camisa", preco: 50 },
+  { produto: "Calça", preco: 100 },
+  { produto: "Tênis", preco: 200 }
+]
+    </code>
+  </div>
+
+  <div class="questao">
+    <h3>7. (map + filter)</h3>
+    <p>Retorne apenas os números pares multiplicados por 2:</p>
+    <code>const numeros = [1, 2, 3, 4, 5, 6]</code>
+  </div>
+
+  <div class="questao">
+    <h3>8. (filter + reduce)</h3>
+    <p>Some apenas os números maiores que 25:</p>
+    <code>const numeros = [10, 20, 30, 40, 50]</code>
+  </div>
+
+  <div class="questao">
+    <h3>9. (reduce - contador)</h3>
+    <p>Conte quantas vezes cada palavra aparece:</p>
+    <code>
+const palavras = ["maçã", "banana", "maçã", "laranja", "banana", "maçã"]
+    </code>
+  </div>
+
+  <div class="questao">
+    <h3>10. (nível HARD)</h3>
+    <p>
+      Retorne apenas alunos com nota ≥ 6 e calcule a média das notas deles:
+    </p>
+    <code>
+const alunos = [
+  { nome: "Ana", nota: 7 },
+  { nome: "João", nota: 5 },
+  { nome: "Carlos", nota: 8 },
+  { nome: "Maria", nota: 4 }
+]
+    </code>
+  </div>
+
+  <script src="simulado2.js"></script>
+
+</body>
+
+</html>
