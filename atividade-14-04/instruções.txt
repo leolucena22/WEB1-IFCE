@@ -1,0 +1,32 @@
+Exerc ́ıcio Pr ́atico
+
+Objetivo: Desenvolver um website institucional para um profissional e empresa de um setor tradi-
+cional, aplicando conhecimentos avan ̧cados de estrutura ̧c ̃ao, estiliza ̧c ̃ao manual e interatividade.
+
+1. Instru ̧c ̃oes e Tecnologias
+– Permitido: HTML, CSS, JavaScript e uso de IA para suporte.
+– Proibido: Frameworks (React, Vue, Angular), Bibliotecas de Estilo (Bootstrap, Tailwind)
+ou bibliotecas de componentes prontas.
+2. Normas de Utiliza ̧c ̃ao de IA
+O uso de IA  ́e permitido sob as seguintes condi ̧c ̃oes:
+• Documenta ̧c ̃ao no C ́odigo: Todo trecho de c ́odigo gerado ou otimizado por IA deve conter
+um coment ́ario superior indicando:
+a) Qual ferramenta foi utilizada (ex: ChatGPT, Gemini, Claude, Copilot);
+b) Qual foi a tarefa executada pela IA (ex: ”Cria ̧c ̃ao da l ́ogica de valida ̧c ̃ao de CPF”);
+c) Altera ̧c ̃oes manuais feitas pelo aluno sobre o c ́odigo sugerido.
+• Responsabilidade do Autor: O aluno  ́e o  ́unico respons ́avel pela veracidade, seguran ̧ca e
+funcionamento do c ́odigo. Erros gerados pela IA n ̃ao ser ̃ao aceitos como justificativa para falhas
+no projeto.
+3. Requisitos T ́ecnicos Obrigat ́orios
+Para obter a nota m ́axima, o projeto deve conter:
+1. Responsividade Manual: O site deve ser adapt ́avel para dispositivos m ́oveis.
+2. Interatividade JS: Pelo menos uma funcionalidade dinˆamica (ex: menu hamb ́urguer, carrossel
+de imagens manual, c ́alculo de or ̧camento ou valida ̧c ̃ao de formul ́ario).
+
+3. Estiliza ̧c ̃ao Avan ̧cada (Pesquisa): Uso de vari ́aveis CSS (Custom Properties), fontes exter-
+nas (Google Fonts) e transi ̧c ̃oes/anima ̧c ̃oes suaves.
+
+4. Formul ́ario de Contato: Deve conter campos validados e uma m ́ascara (ex: telefone ou
+CPF) implementada via JavaScript.
+
+Tema do site: Chef de Cozinha Bistrˆo Sabor e Arte
