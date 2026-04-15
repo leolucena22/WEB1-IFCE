@@ -1,14 +1,10 @@
 /*
 GERADO COM: GitHub Copilot
-TAREFA: Criar menu hambúrguer responsivo, validação de formulário com máscara de telefone, 
+TAREFA: validação de formulário com máscara de telefone, 
         e interatividades dinâmicas para o Bistrô Sabor e Arte
 */
 
 // ===== MENU HAMBÚRGUER =====
-/*
-GERADO COM: GitHub Copilot
-TAREFA: Implementar menu hambúrguer responsivo com animações
-*/
 document.addEventListener('DOMContentLoaded', function() {
   // Criar elementos do menu hambúrguer dinamicamente
   const header = document.querySelector('.header');
