@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap');
 
-/*
-GERADO COM: GitHub Copilot
-TAREFA: Criar estilização avançada com variáveis CSS, responsividade manual, 
-        animações suaves e design responsivo para Bistrô Sabor e Arte
-ALTERAÇÕES MANUAIS: Ajuste de cores, espaçamentos
-*/
-
 :root {
   /* Cores */
   --color-primary: #8B4513;
