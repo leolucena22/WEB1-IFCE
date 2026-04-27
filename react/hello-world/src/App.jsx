@@ -1,5 +1,6 @@
 import "./App.css";
 import { Soma } from "./soma";
+import { Subtracao } from "./subtracao";
 import Tchau from "./texto";
 
 function App() {
@@ -8,10 +9,11 @@ function App() {
   //const nomeCompleto = nome + " " + sobrenome;
 
   return (
-    <>
+    <div>
       <Tchau nome={nome} sobrenome={sobrenome} />
       <Soma num1={5} num2={10} />
-    </>
+      <Subtracao num3={10} num4={5} />
+    </div>
   );
 }
 
