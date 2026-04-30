@@ -1,9 +1,14 @@
 .card-produto {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
   text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card-produto:hover {
+  transform: translateY(-2px);
 }
 
 .card-produto ul {
@@ -13,10 +18,12 @@
 }
 
 .card-produto li {
-  padding: 0.25rem 0;
+  padding: 0.5rem 0;
+  color: var(--text-secondary);
 }
 
 .card-produto li:first-child {
-  font-weight: bold;
-  font-size: 1.1rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-primary);
 }

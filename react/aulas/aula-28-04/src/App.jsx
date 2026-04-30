@@ -14,7 +14,7 @@ function App() {
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfE8XWOVe86hLGi8m9mgPTsva_KWjTHbT9iQ&s";
 
   return (
-    <>
+    <div className="container">
       <li>Questão 01</li>
       <CartaoVisita nomeEmpresa={nomeEmpresa} url={url} />
 
@@ -37,7 +37,7 @@ function App() {
 
       <li>Questão 05</li>
       <Blog></Blog>
-    </>
+    </div>
   );
 }
 
