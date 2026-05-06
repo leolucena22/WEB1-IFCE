@@ -88,7 +88,9 @@ function Formulario() {
           {erros.senha && <p className="error-msg">{erros.senha}</p>}
         </div>
 
-        <button className="submit-btn" type="submit">Enviar</button>
+        <button className="submit-btn" type="submit">
+          Enviar
+        </button>
       </form>
     </div>
   );
